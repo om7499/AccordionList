@@ -1,0 +1,57 @@
+
+{
+  "user": [
+    {
+      "id": 1,
+      "question": "What is React?",
+      "answer": "React is a JavaScript library for building user interfaces."
+    },
+    {
+      "id": 2,
+      "question": "How does useState work?",
+      "answer": "useState is a Hook that lets you add React state to function components."
+    },
+    {
+      "id": 3,
+      "question": "What is the difference between npm and npx?",
+      "answer": "npm (Node Package Manager) is used to install packages, whereas npx (Node Package eXecute) is used to execute packages without globally installing them."
+    },
+    {
+      "id": 4,
+      "question": "What is package.json in a React project, and what is its purpose?",
+      "answer": "package.json is a configuration file that contains metadata about the project and manages dependencies, scripts, and project settings."
+    },
+    {
+      "id": 5,
+      "question": "What is package-lock.json, and why is it needed?",
+      "answer": "package-lock.json ensures that dependencies are locked to specific versions to maintain consistency across different environments."
+    },
+    {
+      "id": 6,
+      "question": "What are dependencies in React? How are they different from devDependencies?",
+      "answer": "Dependencies are required for production, while devDependencies are only needed for development (e.g., testing libraries)."
+    },
+    {
+      "id": 7,
+      "question": "What is the purpose of the node_modules folder in a React project?",
+      "answer": "The node_modules folder stores all installed dependencies required by the project."
+    },
+    {
+      "id": 8,
+      "question": "What is the purpose of the public & src folder in a React project?",
+      "answer": "The public folder contains static assets, while the src folder contains source code like components, styles, and logic."
+    },
+    {
+      "id": 9,
+      "question": "What are the key features of React.js?",
+      "answer": "Key features include Virtual DOM, JSX, component-based architecture, one-way data binding, and hooks."
+    },
+    {
+      "id": 10,
+      "question": "What is JSX? How is it different from HTML?",
+      "answer": "JSX is a syntax extension of JavaScript that allows writing UI elements in a syntax similar to HTML but with JavaScript expressions."
+    }
+    
+  ]
+}
+
