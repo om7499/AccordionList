@@ -2,25 +2,25 @@ import React, { useState, useEffect } from "react";
 import "../App.css";
 
 const Accordion = () => {
-  const [data, setData] = useState([]);
+  const [userdata, setUserData] = useState([]);
   const [openId, setOpenId] = useState(null);
 
-  // Fetch data from db.json
+  // Fetch data from public folder
   useEffect(() => {
-    fetch("http://localhost:5000/user") 
+    fetch("/data.json") 
       .then((response) => response.json())
-      .then((data) => setData(data))
+      .then((data) => setUserData(data.user || []))
       .catch((error) => console.error("Error fetching data:", error));
   }, []);
 
-  // handel answer using this function
+  // Handle answer toggle
   const handleAnswer = (id) => {
     setOpenId(openId === id ? null : id);
   };
 
   return (
     <div className="accordion-container">
-      {data.map((item) => (
+      {userdata.map((item) => (
         <div key={item.id} className="accordion-item">
           <div className="accordion-question" onClick={() => handleAnswer(item.id)}>
             {item.question}
